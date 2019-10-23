@@ -1,8 +1,88 @@
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: normal;
+	src: local('Open Sans'), url('../font/OpenSans-Regular.ttf') format('truetype');
+}
+
 html, body {
-	padding:0;
 	margin:0;
 	height:100%;
-	background-color: black;
+	background-image: url(../img/bg-temporaire.png);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#logoheader {
+	padding-top: 5px;
+	height: 210px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+
+#socialheader {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+/*	background-color: green;*/
+	width: 1000px;
+	padding-top: 4px;
+}
+
+#headerfacebook {
+	height: 32px;
+	width: 33px;
+	background-image: url(../img/facebook1.png);
+	background-repeat: no-repeat;
+}
+
+#headertwitter {
+	margin-left: 10px;
+	height: 32px;
+	width: 33px;
+	background-image: url(../img/twitter1.png);
+}
+
+#headeryoutube {
+	margin-left: 10px;
+	height: 32px;
+	width: 33px;
+	background-image: url(../img/youtube1.png);
+}
+
+#headerfacebook:hover {
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/facebook2.png);
+}
+
+#headertwitter:hover {
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/twitter2.png);
+}
+
+#headeryoutube:hover {
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/youtube2.png);
+}
+
+/* BARRE DE NAVIGATION */
+
+nav {
+	width: 850px;
+}
+
+nav #nav {
+	padding-left: 0px;
+	border-radius: 50px;
+	border: 2px solid #262626;
 }
 
 nav, #nav ul {
@@ -32,7 +112,9 @@ nav, #nav ul {
 	padding-right: 30px;
 	padding-left: 30px;
 	text-decoration: none;
-	font-family: sans-serif;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+	color: #262626;
 }
 
 nav ul li {
@@ -42,7 +124,6 @@ nav ul li {
 #nav ul {
 	position: absolute;
 	z-index: 1000;
-	min-width: 100%;
 	white-space: nowrap;
 	text-align: left;
 	width: 200px;
@@ -107,7 +188,7 @@ nav ul li {
 }
 
 nav ul {
-	background-color: green;
+	background-color: white;
 }
 
 .violet {
@@ -127,9 +208,9 @@ nav ul {
 }
 
 #borderd {
-	border-right: 2px solid brown;
+	border-right: 2px solid #262626;
 }
 
 #borderg {
-	border-left: 2px solid brown;
+	border-left: 2px solid #262626;
 }
