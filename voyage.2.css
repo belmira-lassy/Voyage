@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+	
+	
+
+	* {
+		box-sizing: border-box;
+	}
+
+html {
+	
+    background-image: url(img/Gabon6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: normal;
+	src: local('Open Sans'), url('../font/OpenSans-Regular.ttf') format('truetype');
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*Divers*//*Red*/
+
+.color1{
+	color:#2A8800;
+}
+
+.color2{
+	color:#E5EA27;
+}
+
+.color3{
+	color:#0924B1;
+}
+
+
+h1{
+	font-family: "Anime Ace";
+	text-align: center;
+	}
+
+main {
+	position: relative;
+	}
+
+
+
+@keyframes appear-left {
+	0% {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+	100% {
+	transform: translateX(0%);
+	opacity: 1;
+}
+	}
+
+	@keyframes appear-right {
+		0% {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(0%);
+			opacity: 1;
+		}
+	}
+
+	@keyframes appear {
+		0% {
+			transform: scale(0, 0);
+			opacity: 0;
+		}
+		100% {
+			transform: scale(1, 1);
+			opacity: 1;
+		}
+	}
+
+	.columns {
+		width: 100%;
+		display: flex;
+		margin-top: 2.5em;
+	}
+	.columns aside {
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 25%;
+		overflow: hidden;
+	}
+	aside figure {
+		animation: appear-right 1s;
+		animation-iteration-count: 1;
+	}
+	aside:first-child figure {
+		animation: appear-left 1s;
+	}
+	.columns section {
+		width: 50%;
+		animation: appear 1s;
+		animation-iteration-count: 1;
+	}
+	figure {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		margin-bottom: 1em;
+		position: relative;
+		border-radius: 8px;
+		height: 300px;
+		overflow: hidden;
+		z-index: 0;
+	}
+	figure::after {
+		z-index: 1;
+		content: "";
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 0.33));
+	}
+	figure img {
+		position: absolute;
+		margin: auto;
+		left: -9999px;
+		right: -9999px;
+		height: 100%;
+		z-index: -1;
+	}
+	figure p {
+		position: absolute;
+		display: block;
+		margin: 0;
+		padding: 0;
+		bottom: 0.5em;
+		left: 0.5em;
+		font-size: 150%;
+		color: rgb(236, 196, 85);
+		text-shadow: 3px 3px 0 black;
+		font-family: "Anime Ace";
+		font-weight: bold;
+		z-index: 2;
+	}
+	
+	
