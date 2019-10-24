@@ -123,7 +123,7 @@ main {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 0.33));
+		background: linear-gradient(to bottom, transparent 59%, rgba(0, 0, 0, 0.33));
 	}
 	figure img {
 		position: absolute;
