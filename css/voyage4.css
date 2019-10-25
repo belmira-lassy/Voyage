@@ -1,0 +1,135 @@
+body{
+    background:url("../img/voyage4/background.jpg");
+    background-size: cover;
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background:url("../img/voyage4/drapeau.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+footer{
+    background-color: rgba(56, 56, 59, 0.8);
+}
+
+.page_gauche{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    width: 40%;
+    padding:20px;
+    padding-right:40px;
+}
+
+.page_droite{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    flex-basis: fill;
+    width: 40%;
+    padding:20px;
+    padding-left:40px;
+}
+
+h1{
+    margin-top:0;
+    text-align: center;
+}
+
+
+.principal{
+    display: flex;
+    background:url("../img/voyage4/carnet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-items: stretch;
+    align-content: center;
+    margin:15px;
+    padding:20px;
+    margin-bottom:25px;
+    height:120vh;
+}
+
+
+.page_gauche{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    width: 40%;
+    padding:20px;
+    padding-right:45px;
+}
+
+.page_droite{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    flex-basis: fill;
+    width: 40%;
+    padding:20px;
+    padding-left:45px;
+}
+
+#drapeau{
+    float: right;
+    width: 150px;
+    margin:5px;
+}
+
+h2{
+    display: flex;
+    align-items: top;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.principal p{
+    margin:10px;
+    margin-left:0;
+    font-size:18px;
+}
+
+.cartes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cartes img{
+    width: 200px;
+    filter: grayscale(80%); 
+    max-height:120px;  
+    margin:5px;
+}
+
+#localisation{
+    width: 150px;
+    filter: grayscale(80%);
+}
+
+#carte_regions{
+    width: 150px;
+    filter: grayscale(80%);
+    margin-bottom:200px;
+}
+
+#localisation:hover{
+    transform-origin:bottom;
+    zoom:3;
+    filter: grayscale(0%);
+}
+
+#carte_regions:hover{
+    zoom:3;
+    filter: grayscale(0%);
+    
+}
