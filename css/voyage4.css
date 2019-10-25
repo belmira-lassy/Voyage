@@ -7,6 +7,8 @@ main{
 
     display: flex;
     flex-direction: column;
+    margin-bottom:30px;
+    margin-top:30px;
 }
 
 header{
@@ -40,14 +42,13 @@ footer{
 }
 
 h1{
-    margin-top:0;
     text-align: center;
 }
 
 
 .principal{
     display: flex;
-    background:url("../img/voyage4/carnet.png");
+    background:url("../img/voyage4/carnet.png");opacity:.75;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,6 +131,34 @@ h2{
 
 #carte_regions:hover{
     zoom:3;
-    filter: grayscale(0%);
-    
+    filter: grayscale(0%);  
+}
+
+/*FORMULAIRE*/
+
+.formulaire{
+    border:1px;
+}
+
+.formulaire form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.formulaire input[type=text],input[type=email], textarea{
+    border: 1px solid #000000;
+    padding: 1vh;
+    margin: 1vh 0;
+    color: #000000;
+}
+
+#button{
+    padding: 1vw;
+    margin: 1vh 0 0.5vh 0;
+    border-radius: 8px;
+    background-color:green;
+    color: #FFFFFF;
+    cursor: pointer;
 }
