@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 @font-face {
 	font-family: "Open Sans";
 	font-style: normal;
@@ -7,9 +9,22 @@
 
 html, body {
 	margin:0;
-	height:100%;
-	background-image: url(../img/bg-temporaire.png);
 }
+
+/*ACCUEIL*/
+
+.fond_ecran_accueil{
+	background: url("../img/bg-temporaire.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.principal_accueil{
+height:300px;
+}
+
+/*HEADER*/
 
 header {
 	display: flex;
@@ -29,7 +44,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-/*	background-color: green;*/
 	width: 1000px;
 	padding-top: 4px;
 }
@@ -83,6 +97,8 @@ nav #nav {
 	padding-left: 0px;
 	border-radius: 50px;
 	border: 2px solid #262626;
+	background-color: white;
+
 }
 
 nav, #nav ul {
@@ -115,6 +131,7 @@ nav, #nav ul {
 	font-family: 'Open Sans';
 	text-transform: uppercase;
 	color: #262626;
+	
 }
 
 nav ul li {
@@ -188,7 +205,7 @@ nav ul li {
 }
 
 nav ul {
-	background-color: white;
+	/*background-color: white;*/
 }
 
 .violet {
@@ -213,4 +230,92 @@ nav ul {
 
 #borderg {
 	border-left: 2px solid #262626;
+}
+
+
+/*FOOTER*/	
+
+footer{	
+    display:flex;	
+    justify-items: stretch;	
+	justify-content: space-between;	
+	background-color: rgba(56, 56, 59, 0.8);
+}
+
+.plan_site{	
+    display: flex;	
+    justify-content: flex-start ;	
+    flex-direction:column;	
+    align-items: flex-start;	
+    padding:10px;	
+}	
+
+.sous_plan_site{	
+    display:flex;	
+    flex-direction: row;	
+}	
+
+.footer_accueil{	
+    display:flex;	
+    margin:10px;	
+    margin-left:0;	
+}	
+
+.footer_destinations{	
+    display:flex;	
+    flex-direction:column;	
+    align-items: center;	
+    margin:10px;	
+}	
+
+.footer_continent{	
+    display: flex;	
+    flex-direction:column;	
+}	
+
+.footer_guide{	
+    display:flex;	
+    flex-direction:column;	
+    align-items: center;	
+    margin:10px;	
+}	
+
+.footer_nom{	
+    display: flex;	
+    flex-direction: column;  	
+}	
+
+.copyright{	
+    display:flex;	
+    justify-content: flex-end;	
+    flex-grow:1;	
+    padding:10px;	
+}	
+
+footer ul,li{	
+    list-style-position: inside;	
+    margin:2px;	
+}	
+
+footer ul{	
+    padding-inline-start: 20px;	
+}	
+
+footer a{	
+    text-decoration:none;	
+    color :inherit;	
+}	
+
+footer a:hover{	
+    color:gold;	
+}	
+
+footer p{	
+    display:flex;	
+	margin:5px;	
+} 
+
+footer p,a,ul,li{
+	color:white;
+	font-size:15px;
 }
