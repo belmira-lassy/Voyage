@@ -21,8 +21,22 @@ html, body {
 }
 
 .principal_accueil{
-height:300px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	background-color: rgb(255, 255, 255,0.8);
+	margin:40px;
+	padding:40px;
+	border-radius: 20px;
 }
+
+.principal_accueil h1{
+	font-size: 2em;
+}
+
+
 
 /*HEADER*/
 
@@ -201,10 +215,6 @@ nav ul li {
     background: white;
     border: 1px solid grey;
     border-collapse: collapse;
-}
-
-nav ul {
-	/*background-color: white;*/
 }
 
 .violet {
