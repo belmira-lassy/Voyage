@@ -22,7 +22,6 @@ body {
 	src: local('Montserrat'), url('../font/Montserrat-Bold.ttf') format('truetype');
 }
 
-
 @font-face {
 	font-family: "Raleway";
 	font-style: normal;
@@ -46,7 +45,7 @@ main {
 #containermid6 {
 	background-color: white;
 	width: 1000px;
-	height: 3000px;
+	height: 4000px;
 	border-radius: 20px;
 }
 
@@ -63,9 +62,44 @@ main {
 }
 
 #imgjapong {
-	height: 300px;
+	height: 200px;
 	width: 200px;
 /*	background-color: orange;*/
+}
+
+@-webkit-keyframes fleurrotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes fleurrotation {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.fleurrotation {
+  -webkit-animation: fleurrotation 6s linear infinite;
+  -moz-animation: fleurrotation 6s linear infinite;
+  -o-animation: fleurrotation 6s linear infinite;
+  animation: fleurrotation 6s linear infinite;
 }
 
 #imgjaponc {
@@ -160,26 +194,21 @@ main {
 	padding-right: 40px;
 }
 
-#bloc4 {
-	background-color: orange;
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-}
-
 #cpara4 {
-	height: 200px;
 	display: flex;
 	flex-direction: column;
 	color: #262626;
 	padding-left: 40px;
 	padding-right: 40px;
-	background-color: yellow;
+	padding-top: 40px;
+	padding-bottom: 40px;
+/*	background-color: yellow;*/
 }
 
 table, td {
 	border: 2px solid black;
 	border-collapse: collapse;
+	font-family: "Raleway";
 }
 
 .tablelieu {
@@ -206,7 +235,28 @@ table, td {
 	text-align: center;
 }
 
-#ilesodoshima {
+#photolieu {
 	height: 200px;
 	width: 300px;
+}
+
+#tabletitle {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#cpara5 {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #262626;
+}
+
+.liarticle {
+	font-family: "Raleway";
+	text-align: left;
 }

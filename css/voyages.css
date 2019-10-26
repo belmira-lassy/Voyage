@@ -7,7 +7,6 @@
 
 html, body {
 	margin:0;
-	background-image: url(../img/bg-temporaire.png);
 }
 
 header {
@@ -82,6 +81,7 @@ nav #nav {
 	padding-left: 0px;
 	border-radius: 50px;
 	border: 2px solid #262626;
+	background-color: white;
 }
 
 nav, #nav ul {
@@ -184,10 +184,6 @@ nav ul li {
     background: white;
     border: 1px solid grey;
     border-collapse: collapse;
-}
-
-nav ul {
-	background-color: white;
 }
 
 .violet {
