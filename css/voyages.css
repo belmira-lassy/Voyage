@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 @font-face {
 	font-family: "Open Sans";
 	font-style: normal;
@@ -9,6 +11,35 @@ html, body {
 	margin:0;
 }
 
+/*ACCUEIL*/
+
+.fond_ecran_accueil{
+	background: url("../img/background1.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.principal_accueil{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	background-color: rgb(255, 255, 255,0.8);
+	margin:40px;
+	padding:40px;
+	border-radius: 20px;
+}
+
+.principal_accueil h1{
+	font-size: 2em;
+}
+
+
+
+/*HEADER*/
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -18,8 +49,7 @@ header {
 
 #logoheader {
 	padding-top: 5px;
-	height: 210px;
-	width: 300px;
+	height: 150px;
 	padding-bottom: 10px;
 }
 
@@ -27,7 +57,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-/*	background-color: green;*/
 	width: 1000px;
 	padding-top: 4px;
 }
@@ -82,6 +111,7 @@ nav #nav {
 	border-radius: 50px;
 	border: 2px solid #262626;
 	background-color: white;
+
 }
 
 nav, #nav ul {
@@ -114,6 +144,7 @@ nav, #nav ul {
 	font-family: 'Open Sans';
 	text-transform: uppercase;
 	color: #262626;
+	
 }
 
 nav ul li {
@@ -208,4 +239,91 @@ nav ul li {
 
 #borderg {
 	border-left: 2px solid #262626;
+}
+
+
+/*FOOTER*/	
+
+footer{	
+    display:flex;	
+	justify-content: space-between;	
+	background-color: rgba(56, 56, 59, 0.8);
+}
+
+.plan_site{	
+    display: flex;	
+    justify-content: flex-start ;	
+    flex-direction:column;	
+    align-items: flex-start;	
+    padding:10px;	
+}	
+
+.sous_plan_site{	
+    display:flex;	
+    flex-direction: row;	
+}	
+
+.footer_accueil{	
+    display:flex;	
+    margin:10px;	
+    margin-left:0;	
+}	
+
+.footer_destinations{	
+    display:flex;	
+    flex-direction:column;	
+    align-items: center;	
+    margin:10px;	
+}	
+
+.footer_continent{	
+    display: flex;	
+    flex-direction:column;	
+}	
+
+.footer_guide{	
+    display:flex;	
+    flex-direction:column;	
+    align-items: center;	
+    margin:10px;	
+}	
+
+.footer_nom{	
+    display: flex;	
+    flex-direction: column;  	
+}	
+
+.copyright{	
+    display:flex;	
+    justify-content: flex-end;	
+    flex-grow:1;	
+    padding:10px;	
+}	
+
+footer ul,footer li{	
+    list-style-position: inside;	
+    margin:2px;	
+}	
+
+footer ul{	
+    padding-inline-start: 20px;	
+}	
+
+footer a{	
+    text-decoration:none;	
+    color :inherit;	
+}	
+
+footer a:hover{	
+    color:gold;	
+}	
+
+footer p{	
+    display:flex;	
+	margin:5px;	
+} 
+
+footer p, footer a, footer ul,footer li{
+	color:white;
+	font-size:15px;
 }
